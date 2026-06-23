@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testni yechish formulalari — O'zbekiston eng yangi tarixi</title>
+<style>
+  :root{
+    --bg:#0f172a;--card:#1e293b;--card2:#243349;--line:#334155;--text:#e2e8f0;--muted:#94a3b8;
+    --brand:#6366f1;--brand2:#818cf8;--ok:#22c55e;--okbg:#06281a;--warn:#f59e0b;--warnbg:#3a2a06;--bad:#ef4444;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.55;}
+  .wrap{max-width:880px;margin:0 auto;padding:16px;}
+  h1{font-size:1.5rem;margin:0 0 4px;}
+  .sub{color:var(--muted);font-size:.9rem;margin-bottom:14px;}
+  a{color:var(--brand2);}
+  .nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+  .nav a{font-size:.85rem;text-decoration:none;border:1px solid var(--line);padding:7px 12px;border-radius:9px;color:var(--text);}
+  .nav a:hover{border-color:var(--brand2);}
+
+  .note{background:var(--warnbg);border:1px solid var(--warn);border-radius:11px;padding:13px 15px;font-size:.9rem;margin-bottom:18px;}
+  h2{font-size:1.2rem;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--brand);color:var(--brand2);}
+  .rule{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:11px;padding:13px 15px;margin-bottom:11px;}
+  .rule.hi{border-left-color:var(--ok);}
+  .rule.mid{border-left-color:var(--warn);}
+  .badge{display:inline-block;font-size:.7rem;font-weight:700;padding:2px 9px;border-radius:99px;color:#fff;margin-bottom:6px;}
+  .b-100{background:var(--ok);} .b-hi{background:var(--brand);} .b-mid{background:var(--warn);color:#000;}
+  .rule .if{font-weight:700;}
+  .rule .then{color:#bbf7d0;font-weight:700;}
+  .rule .ex{color:var(--muted);font-size:.85rem;margin-top:6px;font-style:italic;}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;margin-bottom:10px;background:var(--card);border-radius:10px;overflow:hidden;}
+  th,td{padding:9px 11px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;}
+  th{background:var(--card2);color:var(--brand2);font-size:.82rem;text-transform:uppercase;letter-spacing:.03em;}
+  td.k{color:var(--ok);font-weight:700;white-space:nowrap;}
+  .chain{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0;}
+  .chain span{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:5px 10px;font-size:.85rem;}
+  .chain .arr{border:none;background:none;color:var(--muted);padding:0 2px;}
+  .footer{text-align:center;color:var(--muted);font-size:.78rem;padding:24px 0;}
+  @media print{.nav{display:none;} body{background:#fff;color:#000;} .rule,table,.note{border-color:#ccc;background:#fff;break-inside:avoid;} .rule .then{color:#15803d;} td.k{color:#15803d;}}
+  @media(max-width:560px){h1{font-size:1.25rem;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🧠 Testni yechish formulalari</h1>
+  <div class="sub">O'zbekistonning eng yangi tarixi · 400 ta savol tahlili asosida · yodlashni yengillashtiruvchi qoidalar</div>
+  <div class="nav">
+    <a href="index.html">📝 Test ishlash</a>
+    <a href="qollanma.html">📚 Ikki tilli qo'llanma</a>
+    <a href="javascript:window.print()">🖨️ Chop etish</a>
+  </div>
+
+  <div class="note">
+    ⚠️ <b>Halol ogohlantirish:</b> Bu formulalar — 400 ta savolni statistik tahlil qilish natijasi.
+    Ular <b>ehtimollikni oshiradi</b>, lekin 100% kafolat emas. Eng ishonchli yo'l baribir asosiy faktlarni bilish.
+    Quyidagi qoidalar ishonchsiz savollarda <b>to'g'ri taxmin qilish</b> va vaqtni tejash uchun.
+    Ranglar: <b style="color:var(--ok)">yashil = juda ishonchli</b>, <b style="color:var(--brand2)">ko'k = ishonchli</b>, <b style="color:var(--warn)">sariq = yordamchi</b>.
+  </div>
+
+  <h2>1. Kalit so'z → doimiy javob qoidalari</h2>
+
+  <div class="rule hi">
+    <span class="badge b-100">~100%</span>
+    <div><span class="if">Savolda «...2025-yilda QAYERDA bo'ldi?»</span> (sammit, forum, sessiya, assambleya) → <span class="then">O'zbekiston</span></div>
+    <div class="ex">2025-yildagi barcha xalqaro tadbirlar O'zbekistonda o'tgan. Misol: YUNESKO sessiyasi, MA–Yevropa Ittifoqi sammiti, iqlim forumi, Parlamentlararo ittifoq assambleyasi — hammasi «O'zbekiston».</div>
+  </div>
+
+  <div class="rule hi">
+    <span class="badge b-100">6/6</span>
+    <div><span class="if">Savolda «...olimpiada / muhandislik / kasbiy olimpiadalar O'zbekistonda QACHON o'tkaziladi?»</span> → <span class="then">2026-yil</span></div>
+    <div class="ex">Kelajakdagi olimpiadalar doim 2026. Variantlar ichida «2026» bo'lsa — deyarli har doim to'g'ri (chalg'ituvchilarda 2026 umuman uchramaydi).</div>
+  </div>
+
+  <div class="rule hi">
+    <span class="badge b-100">3/3</span>
+    <div><span class="if">Savolda «...Yevropa Ittifoqi / союз ... sammit/tadbir»</span> → <span class="then">O'zbekiston</span></div>
+  </div>
+
+  <div class="rule">
+    <span class="badge b-hi">2/2 – 3/4</span>
+    <div><span class="if">«Islom madaniyati poytaxti» (столица исламской культуры)</span> → <span class="then">Toshkent</span> (2007-yil)</div>
+  </div>
+
+  <div class="rule">
+    <span class="badge b-hi">2/2</span>
+    <div><span class="if">«Ipak yo'li xalqaro turizm universiteti»</span> → <span class="then">Samarqand</span></div>
+  </div>
+
+  <h2>2. Tez-tez to'g'ri chiqadigan javoblar</h2>
+  <p class="sub" style="margin-top:-4px">Shahar yoki nom so'ralганda, ishonchsiz bo'lsang shu mantiq bo'yicha tanla:</p>
+  <table>
+    <tr><th>Javob</th><th>Necha marta to'g'ri</th><th>Qachon tanlash kerak</th></tr>
+    <tr><td class="k">O'zbekiston</td><td>8</td><td>2025-yil voqealari, xalqaro tadbir «qayerda»</td></tr>
+    <tr><td class="k">Samarqand</td><td>7</td><td>Turizm, madaniyat, meros, Go'ri Amir, universitet</td></tr>
+    <tr><td class="k">Toshkent</td><td>5</td><td>Rasmiy/poytaxt, markaz, muzey, vakolatxona</td></tr>
+    <tr><td class="k">Shahrisabz</td><td>3</td><td>Amir Temur (Oqsaroy, ota maqbarasi), maqom</td></tr>
+    <tr><td class="k">Sh. Mirziyoyev</td><td>3+</td><td>Zamonaviy iqtibos, 2017-yildan keyingi tashabbus</td></tr>
+    <tr><td class="k">M. Behbudiy</td><td>3</td><td>Jadid iqtibosi, «Padarkush», teatr, huquq</td></tr>
+  </table>
+
+  <h2>3. Raqamli kalit juftliklar (yodlash oson)</h2>
+  <p class="sub" style="margin-top:-4px">Eng ko'p chalkashtiriladigan raqamlar — bularni shunchaki yodlab oling:</p>
+  <table>
+    <tr><th>Hujjat / tushuncha</th><th>Raqami</th><th>Sanasi</th></tr>
+    <tr><td>Mustaqillik deklaratsiyasi</td><td class="k">12 modda</td><td>1990, 20-iyun</td></tr>
+    <tr><td>«Davlat mustaqilligi asoslari» qonuni</td><td class="k">17 modda</td><td>1991, 31-avgust</td></tr>
+    <tr><td>Yangi Konstitutsiya (tahrir)</td><td class="k">155 modda</td><td>2023, 30-aprel</td></tr>
+    <tr><td>Harakatlar strategiyasi</td><td class="k">5 yo'nalish</td><td>2017, 7-fevral</td></tr>
+    <tr><td>Taraqqiyot strategiyasi</td><td class="k">7 yo'nalish</td><td>2022, 28-yanvar (2022–2026)</td></tr>
+    <tr><td>2026-yil Murojaatnomasi</td><td class="k">6 yo'nalish</td><td>2025, 26-dekabr</td></tr>
+    <tr><td>«O'zbek modeli» tamoyillari</td><td class="k">5 ta</td><td>—</td></tr>
+  </table>
+  <p class="sub" style="margin-top:-4px">💡 Eslab qolish hiylasi: <b>«1-2 = 12»</b> (Deklaratsiya 12), <b>«17 = mustaqillik (avgust)»</b>, <b>«strategiya: harakat=5, rivoj=7»</b> (alifboda d→r, son ham o'sib boradi).</p>
+
+  <h2>4. Iqtibos qoidasi («kim aytgan / kimga tegishli»)</h2>
+  <table>
+    <tr><th>Iqtibos mavzusi</th><th>Javob</th></tr>
+    <tr><td>Zamonaviy, vatan/tarix/meros haqidagi ulug'vor so'zlar</td><td class="k">Sh. Mirziyoyev</td></tr>
+    <tr><td>«Kuch — adolatda»</td><td class="k">Amir Temur</td></tr>
+    <tr><td>«Dil ba yoru dast ba kor» (Qalb Xudoda, qo'l ishda)</td><td class="k">Bahouddin Naqshband</td></tr>
+    <tr><td>«Vatanni yo'qotgandan ko'ra o'lgan afzal»</td><td class="k">Ahmad ibn Umar Xivaqiy</td></tr>
+    <tr><td>Ta'lim/tarbiya/teatr/huquq haqidagi jadid so'zlari</td><td class="k">M. Behbudiy / A. Avloniy</td></tr>
+  </table>
+
+  <h2>5. Xronologik ketma-ketliklar</h2>
+  <p class="sub" style="margin-top:-4px">Sana so'ralganda tartibni eslang — variantlar ichidan to'g'risi oson topiladi:</p>
+  <b style="font-size:.9rem">🏅 Olimpiada shaharlari:</b>
+  <div class="chain"><span>2016 — Rio</span><span class="arr">→</span><span>2021 — Tokio</span><span class="arr">→</span><span>2024 — Parij</span></div>
+  <b style="font-size:.9rem">👤 Sovet oxiri rahbarlari:</b>
+  <div class="chain"><span>1983–88 Usmonxo'jayev</span><span class="arr">→</span><span>1988–89 Nishonov</span><span class="arr">→</span><span>1989 Karimov</span></div>
+  <b style="font-size:.9rem">🏛️ Mustaqillik bosqichlari:</b>
+  <div class="chain"><span>1990.20.06 Deklaratsiya</span><span class="arr">→</span><span>1991.31.08 Mustaqillik</span><span class="arr">→</span><span>1991.29.12 1-saylov</span><span class="arr">→</span><span>1994 so'm</span></div>
+  <b style="font-size:.9rem">📜 Strategiyalar:</b>
+  <div class="chain"><span>2017 Harakatlar (5)</span><span class="arr">→</span><span>2022 Taraqqiyot (7)</span><span class="arr">→</span><span>2023 «O'zbekiston-2030»</span></div>
+
+  <h2>6. Reyting / indeks kaliti</h2>
+  <p class="sub" style="margin-top:-4px">«Bu indeks nimani baholaydi?» — javob indeks nomida yashiringan:</p>
+  <table>
+    <tr><th>Indeks</th><th>Baholaydi (javob)</th></tr>
+    <tr><td>Doing Business</td><td class="k">Biznes yuritish sharoiti</td></tr>
+    <tr><td>Freedom House</td><td class="k">Siyosiy erkinliklar</td></tr>
+    <tr><td>Heritage Foundation</td><td class="k">Iqtisodiy erkinlik</td></tr>
+    <tr><td>HDI (Inson taraqqiyoti)</td><td class="k">Savodxonlik, turmush, umr</td></tr>
+    <tr><td>GII (Global innovatsiya)</td><td class="k">Innovatsion salohiyat</td></tr>
+    <tr><td>CPI</td><td class="k">Korrupsiya idroki</td></tr>
+    <tr><td>Open Budget Index</td><td class="k">Ochiq byudjet</td></tr>
+    <tr><td>Logistics Performance</td><td class="k">Transport va logistika</td></tr>
+  </table>
+
+  <h2>7. Umumiy taktika (har qanday savolga)</h2>
+  <div class="rule mid">
+    <span class="badge b-mid">22% / 11%</span>
+    <div><span class="if">Uzunlik:</span> to'g'ri javob eng uzun bo'lishi atigi 22%, eng qisqa 11%. Demak «eng uzunini tanla» <b>ishonchsiz</b> — lekin <b>ta'rif savollarida</b> eng to'liq/batafsil variant ko'pincha to'g'ri.</div>
+  </div>
+  <div class="rule mid">
+    <span class="badge b-mid">taktika</span>
+    <div><span class="if">Chetlash (elimination):</span> aniq noto'g'ri 2 tasini olib tashlang. Qolgan 2 tadan biri ko'pincha yuqoridagi «tez-tez to'g'ri» ro'yxatiga mos keladi.</div>
+  </div>
+  <div class="rule mid">
+    <span class="badge b-mid">taktika</span>
+    <div><span class="if">Eng «aniq» variant:</span> raqam/sana so'ralsa, juda aniq va to'liq yozilgan variant (masalan «2017-yil 7-fevral») ko'pincha to'g'ri, «taxminiy» variantlardan ustun.</div>
+  </div>
+
+  <h2>8. Asosiy xulosa</h2>
+  <div class="note" style="background:var(--okbg);border-color:var(--ok)">
+    📊 400 savoldan <b>~171 tasi (43%)</b> Mustaqillik va Yangi O'zbekiston davriga tegishli. Faqat shu davr qoidalarini (2025→O'zbekiston, 2026→olimpiada, strategiya raqamlari, Mirziyoyev iqtiboslari) o'zlashtirsangiz, savollarning katta qismini yodlamasdan yechishingiz mumkin.
+    Qolganlari uchun — yuqoridagi shahar/iqtibos/xronologiya qoidalari + chetlash usuli.
+  </div>
+
+  <div class="footer">
+    Namangan davlat universiteti · O'zbekistonning eng yangi tarixi · 2025/2026<br>
+    Bu formulalar 400 savolni statistik tahlil qilish asosida tuzilgan — yordamchi vosita sifatida foydalaning.
+  </div>
+</div>
+</body>
+</html>
